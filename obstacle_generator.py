@@ -9,7 +9,7 @@ class Pathfinding:
         """
         self.gridworld = gridworld
         self.occupied_time_steps = {}
-        self.obstacle_occupied_points = set()
+        self.obstacle_occupied_points = []
 
     def is_valid_move(self, pos):
         """

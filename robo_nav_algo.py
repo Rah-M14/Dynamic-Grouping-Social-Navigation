@@ -28,6 +28,7 @@ class RLEnvironment:
         self.robot_position = None
         self.goal_position = None
         self.current_step = 0
+        self.global_obstacle_position = []
 
         self._initialize_robot_and_goal()
 
@@ -60,19 +61,33 @@ class RLEnvironment:
         :param action: One of the 8 possible actions (0-7).
         :return: Tuple (new_position, obstacles_positions, collision, goal_reached)
         """
+        
+        print(f"action taken: {action}")
+        
+        old_position = self.robot_position
         new_position = self._move(self.robot_position, action)
         collision = not self._is_valid_move(new_position)
         goal_reached = self._check_goal_reached(new_position)
-
+        
+        
         if not collision:
             self.robot_position = new_position
             # Update obstacles positions for the current time step
             obstacles_positions = self._get_obstacles_positions()
+            self.global_obstacle_position = obstacles_positions
+
             # Increment the current step
             self.current_step += 1
         else:
-            obstacles_positions = self._get_obstacles_positions()  # Return current obstacle positions for consistency
-
+            
+            #updating the environment with old values if there is collision
+            new_position = old_position
+            obstacles_positions =  self.global_obstacle_position
+            
+            
+#         else:
+#             obstacles_positions = self._get_obstacles_positions()  # Return current obstacle positions for consistency
+       
         return new_position, obstacles_positions, collision, goal_reached
 
     def _move(self, position, action):
@@ -82,18 +97,23 @@ class RLEnvironment:
         ]
         direction = directions[action]
         new_position = (position[0] + direction[0], position[1] + direction[1])
-        return new_position if self._is_valid_move(new_position) else position
+        #return new_position if self._is_valid_move(new_position) else position
+        return new_position
 
     def _is_valid_move(self, position):
         """
         Check if the position is within grid bounds, is a free space (value 0), and is not occupied by any obstacle.
         """
+        print(f"-----------checking if valid move---{position}-------")
         rows, cols = self.gridworld.shape
         if not (0 <= position[0] < rows and 0 <= position[1] < cols):
+            print("going outside the world")
             return False
         if self.gridworld[position[0], position[1]] != 0:
+            print("Collison with the wall")
             return False
         if position in self.occupied_time_steps and self.occupied_time_steps[position] == self.current_step:
+            print("collision with an obstacle")
             return False
         return True
 
@@ -107,26 +127,3 @@ class RLEnvironment:
                 obstacles_positions[key] = path[self.current_step]
         return obstacles_positions
 
-# Example usage
-# Define parameters
-number_of_obstacles = 2
-episode_length = 1000
-
-# Initialize the pathfinding class
-pathfinder = Pathfinding(gridworld)
-
-# Generate paths for obstacles
-obstacle_paths = pathfinder.generate_paths(number_of_obstacles, episode_length)
-
-# Create the RL environment
-env = RLEnvironment(gridworld, obstacle_paths, pathfinder.occupied_time_steps, pathfinder.obstacle_occupied_points)
-
-# Example step through the environment
-actions = [0, 1, 2, 3, 4, 5, 6, 7]  # Possible actions
-for _ in range(10):
-    action = np.random.choice(actions)
-    new_position, obstacles_positions, collision, goal_reached = env.step(action)
-    print(f"Step: {env.current_step}, Position: {new_position}, Collision: {collision}, Goal Reached: {goal_reached}")
-    if goal_reached:
-        print("Goal reached!")
-        break
