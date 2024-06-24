@@ -1,6 +1,3 @@
-
-
-
 # Function to check if a position is within the grid bounds and is free
 def is_valid_move(grid, pos):
     rows, cols = grid.shape
