@@ -1,6 +1,8 @@
-import heapq
+import gymnasium as gym
+from gymnasium import spaces
 import numpy as np
 import obstacle_generator as obs
+from stable_baselines3 import PPO
 
 # Robot Path planning algo
 '''
@@ -14,9 +16,9 @@ Path: [(825, 1571), (826, 1570), (827, 1569), (828, 1568), (829, 1567), (830, 15
 '''
 import numpy as np
 
-class RLEnvironment:
-    
+class RLEnvironment(gym.Env):
     def __init__(self, gridworld, obstacle_paths, occupied_time_steps, obstacle_occupied_points, number_of_obstacles, episode_length):
+        super(RLEnvironment, self).__init__()
         self.gridworld = gridworld
         self.obstacle_paths = obstacle_paths
         self.occupied_time_steps = occupied_time_steps
@@ -27,6 +29,14 @@ class RLEnvironment:
         self.global_obstacle_position = []
         self.number_of_obstacles = number_of_obstacles
         self.episode_length = episode_length
+        self.robot_path = []  # List to store the robot's path
+        
+        # Define action and observation space
+        self.action_space = spaces.Discrete(9)  # 9 possible actions including no movement
+        self.observation_space = spaces.Dict({
+            'robot_position': spaces.Box(low=0, high=max(gridworld.shape), shape=(2,), dtype=np.int32),
+            'obstacles_positions': spaces.Box(low=0, high=max(gridworld.shape), shape=(number_of_obstacles, 2), dtype=np.int32)
+        })
         
         self._initialize_robot_and_goal()
         
@@ -35,7 +45,8 @@ class RLEnvironment:
         #instead of rendering at each time step we can see animation of the final episode.
         pass
     
-    def reset(self):
+    def reset(self, seed=None, options=None):
+        super().reset(seed=seed)
         
         # Initialize the pathfinding class
         pathfinder = obs.Pathfinding(self.gridworld)
@@ -50,25 +61,22 @@ class RLEnvironment:
         #contains a list of start or end coordinates of each dynamic obstacle
         self.obstacle_occupied_points = pathfinder.obstacle_occupied_points
         
-        '''
-        Help:
-        You can see the obstacle path by obstacle_paths['1'] or obstacle_paths['2']
-        '''
-        
         self.robot_position = None
         self.goal_position = None
         self.current_step = 0
         self.global_obstacle_position = []
+        self.robot_path = []  # Reset the robot path
         #making a new path for the robot
         self._initialize_robot_and_goal()
         
-        
+        return self._get_obs(),{}
 
     def _initialize_robot_and_goal(self):
         # Find a free space for the robot start point
         self.robot_position = self._find_free_space()
         # Find a free space for the goal point
         self.goal_position = self._find_free_space()
+        self.robot_path.append(self.robot_position) 
 
     def _find_free_space(self):
         free_spaces = np.argwhere(self.gridworld == 0)
@@ -110,22 +118,34 @@ class RLEnvironment:
 
             # Increment the current step
             self.current_step += 1
+            self.robot_path.append(new_position)  # Store the new position in the path
+            
         else:
             
             #updating the environment with old values if there is collision
             new_position = old_position
             obstacles_positions =  self.global_obstacle_position
             
+        obs = self._get_obs()
+        reward = self._get_reward(goal_reached, collision)
+        terminated = goal_reached
+        truncated = self.current_step >= self.episode_length
+        done = goal_reached or self.current_step >= self.episode_length
+        
+        # Print statements for debugging and tracking
+        print(f"Step: {self.current_step}, Action: {action}, Position: {self.robot_position}, Collision: {collision}, Goal Reached: {goal_reached}")
+        print(f"Obstacle Positions: {obstacles_positions}")
+            
             
 #         else:
 #             obstacles_positions = self._get_obstacles_positions()  # Return current obstacle positions for consistency
        
-        return new_position, obstacles_positions, collision, goal_reached
+        return obs, reward, terminated, truncated, {"collision": collision, "goal_reached": goal_reached}
 
     def _move(self, position, action):
         directions = [
             (0, 1), (1, 0), (0, -1), (-1, 0),  # Right, Down, Left, Up
-            (-1, 1), (-1, -1), (1, 1), (1, -1), (0,0)  # Top-Right, Top-Left, Bottom-Right, Bottom-Left
+            (-1, 1), (-1, -1), (1, 1), (1, -1),(0,0)  # Top-Right, Top-Left, Bottom-Right, Bottom-Left, No movement
         ]
         direction = directions[action]
         new_position = (position[0] + direction[0], position[1] + direction[1])
@@ -158,4 +178,21 @@ class RLEnvironment:
             if self.current_step < len(path):
                 obstacles_positions[key] = path[self.current_step]
         return obstacles_positions
+    
+    def _get_obs(self):
+        # Create observation dictionary
+        obstacles_positions = [self.obstacle_paths[key][self.current_step] for key in self.obstacle_paths.keys()]
+        return {
+            'robot_position': np.array(self.robot_position, dtype=np.int32),
+            'obstacles_positions': np.array(obstacles_positions, dtype=np.int32)
+        }
+    
+    def _get_reward(self, goal_reached, collision):
+        if goal_reached:
+            return 100  # Reward for reaching the goal
+        if collision:
+            return -10  # Penalty for collision
+        return -1  # Small penalty for each step taken
+
+    
 
