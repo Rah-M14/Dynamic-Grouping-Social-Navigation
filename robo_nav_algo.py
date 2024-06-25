@@ -2,6 +2,8 @@ import heapq
 import numpy as np
 import obstacle_generator as obs
 
+
+
 # Robot Path planning algo
 '''
 Prerequisite:
