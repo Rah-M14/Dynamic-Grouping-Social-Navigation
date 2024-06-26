@@ -1,0 +1,20 @@
+PRINTING & LOGGING!!!
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+RUN DETAILS!!!
+Ep_Total_Reward : 0
+Ep_Collision_Count : 0
+Ep_Wall_Collision_Count : 0
+Ep_Obstacle_Collision_Count : 0
+Ep_Human_Collision_Count : 0
+Ep_Min_Time_To_Collision : 0
+Ep_Stalled_Time : 0
+Ep_Avg_Human_Distance : 0.0
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+Creating the new Episode
+*******************************************************************
+Initialized the environment with the following
+Agent's Initial Position : (159, 36)
+Goal Position : (29, 364)
+Number of Static Obstacles : 0
+It begins!
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.login() after wandb.init() has no effect.

@@ -1,0 +1,48 @@
+{
+    "os": "macOS-14.5-arm64-arm-64bit",
+    "python": "3.11.5",
+    "heartbeatAt": "2024-06-26T22:22:55.354004",
+    "startedAt": "2024-06-26T22:22:43.722732",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "git": {
+        "remote": "https://github.com/Rah-M14/Dynamic-Grouping-Social-Navigation.git",
+        "commit": "9a3e00d6262bd0d3f868f7bb56cf20434c48b3be"
+    },
+    "email": "amolharsh123@gmail.com",
+    "root": "/Users/apple/Library/CloudStorage/OneDrive-PlakshaUniversity/CustomGym",
+    "host": "Amols-MacBook-Pro.local",
+    "username": "apple",
+    "executable": "/Users/apple/ilgc/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 3228,
+        "min": 600,
+        "max": 3228
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3228,
+            "min": 600,
+            "max": 3228
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 460.4317207336426,
+            "used": 9.555076599121094
+        }
+    },
+    "gpuapple": {
+        "type": "Apple M1 Pro",
+        "vendor": "sppci_vendor_Apple"
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

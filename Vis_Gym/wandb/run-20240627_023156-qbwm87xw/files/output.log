@@ -1,0 +1,14 @@
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+It begins!
+It begins!
+self.agent_pos: None and np.array(start_pos): [472 485]
+It begins!
+self.agent_pos: None and np.array(start_pos): (472, 485)
+It begins!
+self.agent_pos: (21, 559) and np.array(start_pos): (472, 485)
+It begins!
+self.agent_pos: (393, 283) and np.array(start_pos): (472, 485)
+self.agent_pos: (393, 283) and np.array(start_pos): (123, 443)
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.login() after wandb.init() has no effect.
