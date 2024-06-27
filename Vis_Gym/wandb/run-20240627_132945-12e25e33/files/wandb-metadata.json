@@ -1,0 +1,52 @@
+{
+    "os": "Windows-10-10.0.22631-SP0",
+    "python": "3.11.9",
+    "heartbeatAt": "2024-06-27T07:59:48.342181",
+    "startedAt": "2024-06-27T07:59:45.750710",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "git": {
+        "remote": "https://github.com/Rah-M14/Dynamic-Grouping-Social-Navigation.git",
+        "commit": "5d3a0080e1401cdc5eac317e9e8b1b033501b668"
+    },
+    "email": "rahath.m@yahoo.com",
+    "root": "D:/Social_Navigation/Dynamic-Grouping-Social-Navigation",
+    "host": "Parzival",
+    "username": "RahathM",
+    "executable": "c:\\Users\\rahat\\miniconda3\\envs\\myRL\\python.exe",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2304.0,
+        "min": 0.0,
+        "max": 2304.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2304.0,
+            "min": 0.0,
+            "max": 2304.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 1863.0156211853027,
+            "used": 264.0866584777832
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3070 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3070 Laptop GPU",
+            "memory_total": 8589934592
+        }
+    ],
+    "memory": {
+        "total": 31.665363311767578
+    }
+}

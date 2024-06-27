@@ -1,0 +1,282 @@
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+Logging to Train\Logs\PPO_8
+Model saved at step 100 to Train\Saved_Models\PPO_Grid\model_step_100.zip
+Model saved at step 200 to Train\Saved_Models\PPO_Grid\model_step_200.zip
+Model saved at step 300 to Train\Saved_Models\PPO_Grid\model_step_300.zip
+Model saved at step 400 to Train\Saved_Models\PPO_Grid\model_step_400.zip
+Model saved at step 500 to Train\Saved_Models\PPO_Grid\model_step_500.zip
+Model saved at step 600 to Train\Saved_Models\PPO_Grid\model_step_600.zip
+Model saved at step 700 to Train\Saved_Models\PPO_Grid\model_step_700.zip
+Model saved at step 800 to Train\Saved_Models\PPO_Grid\model_step_800.zip
+Model saved at step 900 to Train\Saved_Models\PPO_Grid\model_step_900.zip
+Model saved at step 1000 to Train\Saved_Models\PPO_Grid\model_step_1000.zip
+Model saved at step 1100 to Train\Saved_Models\PPO_Grid\model_step_1100.zip
+Model saved at step 1200 to Train\Saved_Models\PPO_Grid\model_step_1200.zip
+Model saved at step 1300 to Train\Saved_Models\PPO_Grid\model_step_1300.zip
+Model saved at step 1400 to Train\Saved_Models\PPO_Grid\model_step_1400.zip
+Model saved at step 1500 to Train\Saved_Models\PPO_Grid\model_step_1500.zip
+Model saved at step 1600 to Train\Saved_Models\PPO_Grid\model_step_1600.zip
+Model saved at step 1700 to Train\Saved_Models\PPO_Grid\model_step_1700.zip
+Model saved at step 1800 to Train\Saved_Models\PPO_Grid\model_step_1800.zip
+Model saved at step 1900 to Train\Saved_Models\PPO_Grid\model_step_1900.zip
+Model saved at step 2000 to Train\Saved_Models\PPO_Grid\model_step_2000.zip
+----------------------------------
+| rollout/           |           |
+|    ep_len_mean     | 505       |
+|    ep_rew_mean     | -2.45e+03 |
+| time/              |           |
+|    fps             | 89        |
+|    iterations      | 1         |
+|    time_elapsed    | 22        |
+|    total_timesteps | 2048      |
+----------------------------------
+Model saved at step 2100 to Train\Saved_Models\PPO_Grid\model_step_2100.zip
+Model saved at step 2200 to Train\Saved_Models\PPO_Grid\model_step_2200.zip
+Model saved at step 2300 to Train\Saved_Models\PPO_Grid\model_step_2300.zip
+Model saved at step 2400 to Train\Saved_Models\PPO_Grid\model_step_2400.zip
+Model saved at step 2500 to Train\Saved_Models\PPO_Grid\model_step_2500.zip
+Model saved at step 2600 to Train\Saved_Models\PPO_Grid\model_step_2600.zip
+Model saved at step 2700 to Train\Saved_Models\PPO_Grid\model_step_2700.zip
+Model saved at step 2800 to Train\Saved_Models\PPO_Grid\model_step_2800.zip
+Model saved at step 2900 to Train\Saved_Models\PPO_Grid\model_step_2900.zip
+Model saved at step 3000 to Train\Saved_Models\PPO_Grid\model_step_3000.zip
+Model saved at step 3100 to Train\Saved_Models\PPO_Grid\model_step_3100.zip
+Model saved at step 3200 to Train\Saved_Models\PPO_Grid\model_step_3200.zip
+Model saved at step 3300 to Train\Saved_Models\PPO_Grid\model_step_3300.zip
+Model saved at step 3400 to Train\Saved_Models\PPO_Grid\model_step_3400.zip
+Model saved at step 3500 to Train\Saved_Models\PPO_Grid\model_step_3500.zip
+Model saved at step 3600 to Train\Saved_Models\PPO_Grid\model_step_3600.zip
+Model saved at step 3700 to Train\Saved_Models\PPO_Grid\model_step_3700.zip
+Model saved at step 3800 to Train\Saved_Models\PPO_Grid\model_step_3800.zip
+Model saved at step 3900 to Train\Saved_Models\PPO_Grid\model_step_3900.zip
+Model saved at step 4000 to Train\Saved_Models\PPO_Grid\model_step_4000.zip
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 510         |
+|    ep_rew_mean          | -2.5e+03    |
+| time/                   |             |
+|    fps                  | 21          |
+|    iterations           | 2           |
+|    time_elapsed         | 193         |
+|    total_timesteps      | 4096        |
+| train/                  |             |
+|    approx_kl            | 0.021723323 |
+|    clip_fraction        | 0.271       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -2.17       |
+|    explained_variance   | -0.000257   |
+|    learning_rate        | 0.0003      |
+|    loss                 | 3.71e+04    |
+|    n_updates            | 1000        |
+|    policy_gradient_loss | -0.0284     |
+|    value_loss           | 7.98e+04    |
+-----------------------------------------
+Model saved at step 4100 to Train\Saved_Models\PPO_Grid\model_step_4100.zip
+Model saved at step 4200 to Train\Saved_Models\PPO_Grid\model_step_4200.zip
+Model saved at step 4300 to Train\Saved_Models\PPO_Grid\model_step_4300.zip
+Model saved at step 4400 to Train\Saved_Models\PPO_Grid\model_step_4400.zip
+Model saved at step 4500 to Train\Saved_Models\PPO_Grid\model_step_4500.zip
+Model saved at step 4600 to Train\Saved_Models\PPO_Grid\model_step_4600.zip
+Model saved at step 4700 to Train\Saved_Models\PPO_Grid\model_step_4700.zip
+Model saved at step 4800 to Train\Saved_Models\PPO_Grid\model_step_4800.zip
+Model saved at step 4900 to Train\Saved_Models\PPO_Grid\model_step_4900.zip
+Model saved at step 5000 to Train\Saved_Models\PPO_Grid\model_step_5000.zip
+Model saved at step 5100 to Train\Saved_Models\PPO_Grid\model_step_5100.zip
+Model saved at step 5200 to Train\Saved_Models\PPO_Grid\model_step_5200.zip
+Model saved at step 5300 to Train\Saved_Models\PPO_Grid\model_step_5300.zip
+Model saved at step 5400 to Train\Saved_Models\PPO_Grid\model_step_5400.zip
+Model saved at step 5500 to Train\Saved_Models\PPO_Grid\model_step_5500.zip
+Model saved at step 5600 to Train\Saved_Models\PPO_Grid\model_step_5600.zip
+Model saved at step 5700 to Train\Saved_Models\PPO_Grid\model_step_5700.zip
+Model saved at step 5800 to Train\Saved_Models\PPO_Grid\model_step_5800.zip
+Model saved at step 5900 to Train\Saved_Models\PPO_Grid\model_step_5900.zip
+Model saved at step 6000 to Train\Saved_Models\PPO_Grid\model_step_6000.zip
+Model saved at step 6100 to Train\Saved_Models\PPO_Grid\model_step_6100.zip
+------------------------------------------
+| rollout/                |              |
+|    ep_len_mean          | 507          |
+|    ep_rew_mean          | -2.47e+03    |
+| time/                   |              |
+|    fps                  | 16           |
+|    iterations           | 3            |
+|    time_elapsed         | 377          |
+|    total_timesteps      | 6144         |
+| train/                  |              |
+|    approx_kl            | 0.0140637485 |
+|    clip_fraction        | 0.173        |
+|    clip_range           | 0.2          |
+|    entropy_loss         | -2.18        |
+|    explained_variance   | 0.116        |
+|    learning_rate        | 0.0003       |
+|    loss                 | 1.24e+04     |
+|    n_updates            | 2000         |
+|    policy_gradient_loss | -0.0261      |
+|    value_loss           | 5.64e+04     |
+------------------------------------------
+Model saved at step 6200 to Train\Saved_Models\PPO_Grid\model_step_6200.zip
+Model saved at step 6300 to Train\Saved_Models\PPO_Grid\model_step_6300.zip
+Model saved at step 6400 to Train\Saved_Models\PPO_Grid\model_step_6400.zip
+Model saved at step 6500 to Train\Saved_Models\PPO_Grid\model_step_6500.zip
+Model saved at step 6600 to Train\Saved_Models\PPO_Grid\model_step_6600.zip
+Model saved at step 6700 to Train\Saved_Models\PPO_Grid\model_step_6700.zip
+Model saved at step 6800 to Train\Saved_Models\PPO_Grid\model_step_6800.zip
+Model saved at step 6900 to Train\Saved_Models\PPO_Grid\model_step_6900.zip
+Model saved at step 7000 to Train\Saved_Models\PPO_Grid\model_step_7000.zip
+Model saved at step 7100 to Train\Saved_Models\PPO_Grid\model_step_7100.zip
+Model saved at step 7200 to Train\Saved_Models\PPO_Grid\model_step_7200.zip
+Model saved at step 7300 to Train\Saved_Models\PPO_Grid\model_step_7300.zip
+Model saved at step 7400 to Train\Saved_Models\PPO_Grid\model_step_7400.zip
+Model saved at step 7500 to Train\Saved_Models\PPO_Grid\model_step_7500.zip
+Model saved at step 7600 to Train\Saved_Models\PPO_Grid\model_step_7600.zip
+Model saved at step 7700 to Train\Saved_Models\PPO_Grid\model_step_7700.zip
+Model saved at step 7800 to Train\Saved_Models\PPO_Grid\model_step_7800.zip
+Model saved at step 7900 to Train\Saved_Models\PPO_Grid\model_step_7900.zip
+Model saved at step 8000 to Train\Saved_Models\PPO_Grid\model_step_8000.zip
+Model saved at step 8100 to Train\Saved_Models\PPO_Grid\model_step_8100.zip
+----------------------------------------
+| rollout/                |            |
+|    ep_len_mean          | 510        |
+|    ep_rew_mean          | -2.46e+03  |
+| time/                   |            |
+|    fps                  | 14         |
+|    iterations           | 4          |
+|    time_elapsed         | 555        |
+|    total_timesteps      | 8192       |
+| train/                  |            |
+|    approx_kl            | 0.00879489 |
+|    clip_fraction        | 0.0882     |
+|    clip_range           | 0.2        |
+|    entropy_loss         | -2.15      |
+|    explained_variance   | 0.144      |
+|    learning_rate        | 0.0003     |
+|    loss                 | 91.8       |
+|    n_updates            | 3000       |
+|    policy_gradient_loss | -0.0181    |
+|    value_loss           | 3.48e+04   |
+----------------------------------------
+Model saved at step 8200 to Train\Saved_Models\PPO_Grid\model_step_8200.zip
+Model saved at step 8300 to Train\Saved_Models\PPO_Grid\model_step_8300.zip
+Model saved at step 8400 to Train\Saved_Models\PPO_Grid\model_step_8400.zip
+Model saved at step 8500 to Train\Saved_Models\PPO_Grid\model_step_8500.zip
+Model saved at step 8600 to Train\Saved_Models\PPO_Grid\model_step_8600.zip
+Model saved at step 8700 to Train\Saved_Models\PPO_Grid\model_step_8700.zip
+Model saved at step 8800 to Train\Saved_Models\PPO_Grid\model_step_8800.zip
+Model saved at step 8900 to Train\Saved_Models\PPO_Grid\model_step_8900.zip
+Model saved at step 9000 to Train\Saved_Models\PPO_Grid\model_step_9000.zip
+Model saved at step 9100 to Train\Saved_Models\PPO_Grid\model_step_9100.zip
+Model saved at step 9200 to Train\Saved_Models\PPO_Grid\model_step_9200.zip
+Model saved at step 9300 to Train\Saved_Models\PPO_Grid\model_step_9300.zip
+Model saved at step 9400 to Train\Saved_Models\PPO_Grid\model_step_9400.zip
+Model saved at step 9500 to Train\Saved_Models\PPO_Grid\model_step_9500.zip
+Model saved at step 9600 to Train\Saved_Models\PPO_Grid\model_step_9600.zip
+Model saved at step 9700 to Train\Saved_Models\PPO_Grid\model_step_9700.zip
+Model saved at step 9800 to Train\Saved_Models\PPO_Grid\model_step_9800.zip
+Model saved at step 9900 to Train\Saved_Models\PPO_Grid\model_step_9900.zip
+Model saved at step 10000 to Train\Saved_Models\PPO_Grid\model_step_10000.zip
+Model saved at step 10100 to Train\Saved_Models\PPO_Grid\model_step_10100.zip
+Model saved at step 10200 to Train\Saved_Models\PPO_Grid\model_step_10200.zip
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 513         |
+|    ep_rew_mean          | -2.47e+03   |
+| time/                   |             |
+|    fps                  | 13          |
+|    iterations           | 5           |
+|    time_elapsed         | 734         |
+|    total_timesteps      | 10240       |
+| train/                  |             |
+|    approx_kl            | 0.007843511 |
+|    clip_fraction        | 0.0617      |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -2.13       |
+|    explained_variance   | 0.0863      |
+|    learning_rate        | 0.0003      |
+|    loss                 | 2.04e+03    |
+|    n_updates            | 4000        |
+|    policy_gradient_loss | -0.0159     |
+|    value_loss           | 3.64e+04    |
+-----------------------------------------
+Model saved at step 10300 to Train\Saved_Models\PPO_Grid\model_step_10300.zip
+Model saved at step 10400 to Train\Saved_Models\PPO_Grid\model_step_10400.zip
+Model saved at step 10500 to Train\Saved_Models\PPO_Grid\model_step_10500.zip
+Model saved at step 10600 to Train\Saved_Models\PPO_Grid\model_step_10600.zip
+Model saved at step 10700 to Train\Saved_Models\PPO_Grid\model_step_10700.zip
+Model saved at step 10800 to Train\Saved_Models\PPO_Grid\model_step_10800.zip
+Model saved at step 10900 to Train\Saved_Models\PPO_Grid\model_step_10900.zip
+Model saved at step 11000 to Train\Saved_Models\PPO_Grid\model_step_11000.zip
+Model saved at step 11100 to Train\Saved_Models\PPO_Grid\model_step_11100.zip
+Model saved at step 11200 to Train\Saved_Models\PPO_Grid\model_step_11200.zip
+Model saved at step 11300 to Train\Saved_Models\PPO_Grid\model_step_11300.zip
+Model saved at step 11400 to Train\Saved_Models\PPO_Grid\model_step_11400.zip
+Model saved at step 11500 to Train\Saved_Models\PPO_Grid\model_step_11500.zip
+Model saved at step 11600 to Train\Saved_Models\PPO_Grid\model_step_11600.zip
+Model saved at step 11700 to Train\Saved_Models\PPO_Grid\model_step_11700.zip
+Model saved at step 11800 to Train\Saved_Models\PPO_Grid\model_step_11800.zip
+Model saved at step 11900 to Train\Saved_Models\PPO_Grid\model_step_11900.zip
+Model saved at step 12000 to Train\Saved_Models\PPO_Grid\model_step_12000.zip
+Model saved at step 12100 to Train\Saved_Models\PPO_Grid\model_step_12100.zip
+Model saved at step 12200 to Train\Saved_Models\PPO_Grid\model_step_12200.zip
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 518         |
+|    ep_rew_mean          | -2.49e+03   |
+| time/                   |             |
+|    fps                  | 13          |
+|    iterations           | 6           |
+|    time_elapsed         | 924         |
+|    total_timesteps      | 12288       |
+| train/                  |             |
+|    approx_kl            | 0.011535878 |
+|    clip_fraction        | 0.114       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -2.14       |
+|    explained_variance   | 0.377       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 7.63e+03    |
+|    n_updates            | 5000        |
+|    policy_gradient_loss | -0.0207     |
+|    value_loss           | 2.37e+04    |
+-----------------------------------------
+Model saved at step 12300 to Train\Saved_Models\PPO_Grid\model_step_12300.zip
+Model saved at step 12400 to Train\Saved_Models\PPO_Grid\model_step_12400.zip
+Model saved at step 12500 to Train\Saved_Models\PPO_Grid\model_step_12500.zip
+Model saved at step 12600 to Train\Saved_Models\PPO_Grid\model_step_12600.zip
+Model saved at step 12700 to Train\Saved_Models\PPO_Grid\model_step_12700.zip
+Model saved at step 12800 to Train\Saved_Models\PPO_Grid\model_step_12800.zip
+Model saved at step 12900 to Train\Saved_Models\PPO_Grid\model_step_12900.zip
+Model saved at step 13000 to Train\Saved_Models\PPO_Grid\model_step_13000.zip
+Model saved at step 13100 to Train\Saved_Models\PPO_Grid\model_step_13100.zip
+Model saved at step 13200 to Train\Saved_Models\PPO_Grid\model_step_13200.zip
+Model saved at step 13300 to Train\Saved_Models\PPO_Grid\model_step_13300.zip
+Model saved at step 13400 to Train\Saved_Models\PPO_Grid\model_step_13400.zip
+Model saved at step 13500 to Train\Saved_Models\PPO_Grid\model_step_13500.zip
+Model saved at step 13600 to Train\Saved_Models\PPO_Grid\model_step_13600.zip
+Model saved at step 13700 to Train\Saved_Models\PPO_Grid\model_step_13700.zip
+Model saved at step 13800 to Train\Saved_Models\PPO_Grid\model_step_13800.zip
+Model saved at step 13900 to Train\Saved_Models\PPO_Grid\model_step_13900.zip
+Model saved at step 14000 to Train\Saved_Models\PPO_Grid\model_step_14000.zip
+Model saved at step 14100 to Train\Saved_Models\PPO_Grid\model_step_14100.zip
+Model saved at step 14200 to Train\Saved_Models\PPO_Grid\model_step_14200.zip
+Model saved at step 14300 to Train\Saved_Models\PPO_Grid\model_step_14300.zip
+-----------------------------------------
+| rollout/                |             |
+|    ep_len_mean          | 517         |
+|    ep_rew_mean          | -2.5e+03    |
+| time/                   |             |
+|    fps                  | 12          |
+|    iterations           | 7           |
+|    time_elapsed         | 1146        |
+|    total_timesteps      | 14336       |
+| train/                  |             |
+|    approx_kl            | 0.013101762 |
+|    clip_fraction        | 0.128       |
+|    clip_range           | 0.2         |
+|    entropy_loss         | -2.11       |
+|    explained_variance   | 0.313       |
+|    learning_rate        | 0.0003      |
+|    loss                 | 1.26e+04    |
+|    n_updates            | 6000        |
+|    policy_gradient_loss | -0.0207     |
+|    value_loss           | 1.82e+04    |
