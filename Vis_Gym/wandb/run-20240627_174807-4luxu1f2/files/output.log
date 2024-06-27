@@ -1,0 +1,356 @@
+PRINTING & LOGGING!!! 1
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+PRINTING & LOGGING!!! 2
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Logging to Train/Logs/PPO_11
+PRINTING & LOGGING!!! 3
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 4
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 100 to Train/Saved_Models/PPO_Grid_1/model_step_100.zip
+PRINTING & LOGGING!!! 5
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 6
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 200 to Train/Saved_Models/PPO_Grid_1/model_step_200.zip
+PRINTING & LOGGING!!! 7
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 8
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 300 to Train/Saved_Models/PPO_Grid_1/model_step_300.zip
+PRINTING & LOGGING!!! 9
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 10
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 400 to Train/Saved_Models/PPO_Grid_1/model_step_400.zip
+PRINTING & LOGGING!!! 11
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 12
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 500 to Train/Saved_Models/PPO_Grid_1/model_step_500.zip
+PRINTING & LOGGING!!! 13
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 14
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 600 to Train/Saved_Models/PPO_Grid_1/model_step_600.zip
+PRINTING & LOGGING!!! 15
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 16
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 700 to Train/Saved_Models/PPO_Grid_1/model_step_700.zip
+PRINTING & LOGGING!!! 17
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 18
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 800 to Train/Saved_Models/PPO_Grid_1/model_step_800.zip
+PRINTING & LOGGING!!! 19
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 20
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 900 to Train/Saved_Models/PPO_Grid_1/model_step_900.zip
+PRINTING & LOGGING!!! 21
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 22
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 1000 to Train/Saved_Models/PPO_Grid_1/model_step_1000.zip
+PRINTING & LOGGING!!! 23
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 24
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 1100 to Train/Saved_Models/PPO_Grid_1/model_step_1100.zip
+PRINTING & LOGGING!!! 25
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 26
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 1200 to Train/Saved_Models/PPO_Grid_1/model_step_1200.zip
+PRINTING & LOGGING!!! 27
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 28
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 1300 to Train/Saved_Models/PPO_Grid_1/model_step_1300.zip
+PRINTING & LOGGING!!! 29
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 30
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 1400 to Train/Saved_Models/PPO_Grid_1/model_step_1400.zip
+PRINTING & LOGGING!!! 31
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 32
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 1500 to Train/Saved_Models/PPO_Grid_1/model_step_1500.zip
+PRINTING & LOGGING!!! 33
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 34
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 1600 to Train/Saved_Models/PPO_Grid_1/model_step_1600.zip
+PRINTING & LOGGING!!! 35
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 36
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 1700 to Train/Saved_Models/PPO_Grid_1/model_step_1700.zip
+PRINTING & LOGGING!!! 37
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 38
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 1800 to Train/Saved_Models/PPO_Grid_1/model_step_1800.zip
+PRINTING & LOGGING!!! 39
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 40
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 1900 to Train/Saved_Models/PPO_Grid_1/model_step_1900.zip
+PRINTING & LOGGING!!! 41
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 42
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 2000 to Train/Saved_Models/PPO_Grid_1/model_step_2000.zip
+PRINTING & LOGGING!!! 43
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 49.6     |
+|    ep_rew_mean     | -2.5e+03 |
+| time/              |          |
+|    fps             | 44       |
+|    iterations      | 1        |
+|    time_elapsed    | 46       |
+|    total_timesteps | 2048     |
+---------------------------------
+PRINTING & LOGGING!!! 44
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 2100 to Train/Saved_Models/PPO_Grid_1/model_step_2100.zip
+PRINTING & LOGGING!!! 45
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 46
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 2200 to Train/Saved_Models/PPO_Grid_1/model_step_2200.zip
+PRINTING & LOGGING!!! 47
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 48
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 2300 to Train/Saved_Models/PPO_Grid_1/model_step_2300.zip
+PRINTING & LOGGING!!! 49
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 50
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 2400 to Train/Saved_Models/PPO_Grid_1/model_step_2400.zip
+PRINTING & LOGGING!!! 51
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 52
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 2500 to Train/Saved_Models/PPO_Grid_1/model_step_2500.zip
+PRINTING & LOGGING!!! 53
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 54
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 2600 to Train/Saved_Models/PPO_Grid_1/model_step_2600.zip
+PRINTING & LOGGING!!! 55
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 56
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 2700 to Train/Saved_Models/PPO_Grid_1/model_step_2700.zip
+PRINTING & LOGGING!!! 57
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 58
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 2800 to Train/Saved_Models/PPO_Grid_1/model_step_2800.zip
+PRINTING & LOGGING!!! 59
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 60
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 2900 to Train/Saved_Models/PPO_Grid_1/model_step_2900.zip
+PRINTING & LOGGING!!! 61
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 62
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 3000 to Train/Saved_Models/PPO_Grid_1/model_step_3000.zip
+PRINTING & LOGGING!!! 63
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 64
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 3100 to Train/Saved_Models/PPO_Grid_1/model_step_3100.zip
+PRINTING & LOGGING!!! 65
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 66
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 3200 to Train/Saved_Models/PPO_Grid_1/model_step_3200.zip
+PRINTING & LOGGING!!! 67
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 68
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 3300 to Train/Saved_Models/PPO_Grid_1/model_step_3300.zip
+PRINTING & LOGGING!!! 69
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 70
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 3400 to Train/Saved_Models/PPO_Grid_1/model_step_3400.zip
+PRINTING & LOGGING!!! 71
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 72
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 3500 to Train/Saved_Models/PPO_Grid_1/model_step_3500.zip
+PRINTING & LOGGING!!! 73
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 74
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 3600 to Train/Saved_Models/PPO_Grid_1/model_step_3600.zip
+PRINTING & LOGGING!!! 75
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+PRINTING & LOGGING!!! 76
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 3700 to Train/Saved_Models/PPO_Grid_1/model_step_3700.zip
+PRINTING & LOGGING!!! 77

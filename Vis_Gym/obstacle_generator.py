@@ -94,8 +94,12 @@ class Pathfinding:
 
             # Ensure the total path length is equal to the episode_length
             while len(total_path) < episode_length:
-                
-                start = total_path[-1]
+                if not total_path:
+                    # Find a start position if total_path is empty
+                    start = find_free_space(self.gridworld, occupied_points)
+                else:
+                    start = total_path[-1]
+
                 end = find_free_space(self.gridworld, occupied_points)
                 new_path = self.a_star_pathfinding(start, end)
                 if not new_path:

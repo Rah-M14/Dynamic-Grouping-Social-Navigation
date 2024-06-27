@@ -1,0 +1,27 @@
+
+PRINTING & LOGGING!!! 1
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+PRINTING & LOGGING!!! 2
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Logging to Train/Logs/PPO_9
+Model saved at step 100 to Train/Saved_Models/PPO_Grid_1/model_step_100.zip
+PRINTING & LOGGING!!! 3
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Model saved at step 200 to Train/Saved_Models/PPO_Grid_1/model_step_200.zip
+PRINTING & LOGGING!!! 4
+Starting the engine
+Ready
+Initialised
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.login() after wandb.init() has no effect.

@@ -30,6 +30,7 @@ obstacle_paths = pathfinder.generate_paths(number_of_obstacles, episode_length)
 occupied_time_steps = pathfinder.occupied_time_steps
 #contains a list of start or end coordinates of each dynamic obstacle
 obstacle_occupied_points = pathfinder.obstacle_occupied_points
+print("Starting the engine")
 '''
 Help:
 You can see the obstacle path by obstacle_paths['1'] or obstacle_paths['2']
@@ -53,6 +54,7 @@ from sklearn.cluster import DBSCAN
 class DGSN_Env(gym.Env):
     def __init__(self, gridworld, obstacle_paths, occupied_time_steps, obstacle_occupied_points, number_of_obstacles, episode_length):
         super(DGSN_Env, self).__init__()
+        print("Initialised")
         #print(f"It begins!")
         self.gridworld = gridworld
         self.grid_size = gridworld.shape
@@ -113,6 +115,7 @@ class DGSN_Env(gym.Env):
         self.timeout = 0
         
     def _initialize_robot_and_goal(self):
+        print("initialize_robot_and_goal")
         # Find a free space for the robot start point
         self.robot_position = self._find_free_space()
         self.agent_pos = self.robot_position
@@ -122,6 +125,7 @@ class DGSN_Env(gym.Env):
         self.robot_path.append(self.robot_position) 
         
     def _find_free_space(self):
+        print("_find_free_space")
         free_spaces = np.argwhere(self.gridworld == 0)
         while True:
             candidate = tuple(free_spaces[np.random.choice(len(free_spaces))])
@@ -129,6 +133,7 @@ class DGSN_Env(gym.Env):
                 return candidate
 
     def _is_free_space(self, position):
+        
         # Check if the position is occupied by any obstacle at the current time step
         if position in self.occupied_time_steps and self.occupied_time_steps[position] == self.current_step:
             return False
@@ -393,9 +398,10 @@ class DGSN_Env(gym.Env):
         pass
     
     def reset(self, **kwargs):
-        #print("PRINTING & LOGGING!!!")
-        wandb.log({"Episode": self.ep_no})  
+        
+        wandb.log({"Episode": self.ep_no})
         self.ep_no += 1
+        print(f"PRINTING & LOGGING!!! {self.ep_no}")
 
         if self.current_step > 0:
             self.ep_human_distance = self.human_distance / (self.num_dynamic_obstacles * self.current_step)
@@ -532,6 +538,7 @@ class CustomCallback(BaseCallback):
         
         return True
 
+print("Ready")
 env = DGSN_Env(gridworld, obstacle_paths, occupied_time_steps, obstacle_occupied_points, number_of_obstacles, episode_length)
 obs = env.reset()
 

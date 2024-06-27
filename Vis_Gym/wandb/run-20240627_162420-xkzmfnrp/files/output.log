@@ -1,0 +1,9 @@
+
+PRINTING & LOGGING!!! 1
+initialize_robot_and_goal
+_find_free_space
+_find_free_space
+Using cpu device
+Wrapping the env with a `Monitor` wrapper
+Wrapping the env in a DummyVecEnv.
+PRINTING & LOGGING!!! 2

@@ -32576,3 +32576,19 @@ Traceback (most recent call last):
     self.event_source.remove_callback(self._step)
     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: 'NoneType' object has no attribute 'remove_callback'
+No such comm: 85a64715f4c04d6c83d69add33db8987
+--- Logging error ---
+Traceback (most recent call last):
+  File "/Users/apple/anaconda3/lib/python3.11/logging/__init__.py", line 1114, in emit
+    self.flush()
+  File "/Users/apple/anaconda3/lib/python3.11/logging/__init__.py", line 1094, in flush
+    self.stream.flush()
+OSError: [Errno 5] Input/output error
+Call stack:
+  File "/Users/apple/anaconda3/lib/python3.11/threading.py", line 995, in _bootstrap
+    self._bootstrap_inner()
+  File "/Users/apple/anaconda3/lib/python3.11/threading.py", line 1038, in _bootstrap_inner
+    self.run()
+  File "/Users/apple/ilgc/lib/python3.11/site-packages/ipykernel/parentpoller.py", line 38, in run
+    get_logger().warning("Parent appears to have exited, shutting down.")
+Message: 'Parent appears to have exited, shutting down.'
